@@ -6,7 +6,7 @@ class TodoController < ApplicationController
   def add_task
     if params[:queryResult] then
       message = params[:queryResult][:parameters][:task]
-      uri = URI.parse("https://hooks.todobot.io/iRliKmeGrg")
+      uri = URI.parse("https://hooks.todobot.io/rJP9COCYvB")
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
       http.verify_mode = OpenSSL::SSL::VERIFY_NONE
